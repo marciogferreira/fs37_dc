@@ -1,0 +1,20 @@
+git config --global user.name "Nome e Seu sobrenome"
+git config --global user.email "seu_email_do_git@gmail.com"
+
+git init
+git add .
+
+git commit -m "Subindo Website"
+git branch -M main
+git remote add origin https://github.com/marciogferreira/website.git
+git push -u origin main
+
+--------------------------------------------------
+
+git add .
+git commit -m "Alteracao de Titulo"
+git push -u origin main
+
+--------------------------------------------------
+
+git clone url_do_repositorio

@@ -1,0 +1,38 @@
+body {
+    background-color: #E7E7E7;
+    /* background-image: url('https://4.bp.blogspot.com/-wpGcMwMGFHQ/V6ZtydFbufI/AAAAAAAADHk/4hELqSh4eYIUb1tqvi_VUN4f782BUSVgwCLcB/s2560/amazing_landscape-wallpaper-1920x1080.jpg');
+    background: #E7E7E7 url('https://4.bp.blogspot.com/-wpGcMwMGFHQ/V6ZtydFbufI/AAAAAAAADHk/4hELqSh4eYIUb1tqvi_VUN4f782BUSVgwCLcB/s2560/amazing_landscape-wallpaper-1920x1080.jpg'); */
+}
+
+h1 {
+    color: #f64703;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+#header {
+    background-color: aqua;
+    display: flex;
+}
+#logo {
+    width: 20%;
+    background-color: red;
+}
+#menu {
+    width: 80%;
+    background-color: green;
+}
+
+#banner {
+    width: 100%;
+    background-color: black;
+}
+
+.botao_digital_college {
+   background-color: #f64703;
+   color: white;
+   padding: 10px;
+}

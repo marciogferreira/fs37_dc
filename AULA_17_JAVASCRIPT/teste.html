@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Contato</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      form label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      form textarea {
+        height: 150px;
+        resize: vertical;
+      }
+      form button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background: #555;
+      }
+      .message {
+        margin: 20px 0;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Entre em Contato Conosco</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="button" onclick="enviarDados()">Enviar</button>
+      </form>
+      <div class="message" id="response-message"></div>
+    </div>
+
+    <script>
+      function enviarDados() {
+        const campoNOme = document.getElementById("name");
+        const campoEmail = document.getElementById("email");
+        const campoMessage = document.getElementById("message");
+
+        const nome = campoNOme.value;
+        const email = campoEmail.value;
+        const message = campoMessage.value;
+
+        document.getElementById("response-message").innerHTML =
+          "Email enviado com sucesso";
+      }
+    </script>
+  </body>
+</html>

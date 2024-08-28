@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // ESTRUTURA CONDICIONAL
+      const condicao = true;
+      if (condicao) {
+        document.write("É verdadeiro");
+        console.log("E Verdadeiro");
+      } else {
+        document.write("É Falso");
+        console.log("É falso");
+      }
+
+      const tempoPorAno = 3;
+      const quantidadeFilhos = 2;
+      // E => &&
+      if (tempoPorAno >= 2 && quantidadeFilhos >= 2) {
+        console.log("Aumento Salarial Aprovado");
+      } else {
+        console.log("Aumento Salarial nao aprovado");
+      }
+      // OU - ||
+      if (tempoPorAno >= 2 || quantidadeFilhos >= 2) {
+        console.log("Aumento Salarial Aprovado");
+      } else {
+        console.log("Aumento Salarial nao aprovado");
+      }
+    </script>
+  </body>
+</html>

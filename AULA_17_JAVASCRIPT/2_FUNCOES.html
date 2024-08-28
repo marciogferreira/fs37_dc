@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="valor1" />
+    <input type="text" id="valor2" />
+    <select id="operacao">
+      <option value="a">Adicao</option>
+      <option value="m">Multiplicacao</option>
+    </select>
+    <button onclick="executarPrograma()">Resultado</button>
+
+    <div
+      id="resultado"
+      style="background-color: green; padding: 10px; color: white"
+    >
+      Sem resultado
+    </div>
+    <script>
+      // dontpad.com/fs37/funcoes
+      // PASSAGEM DE PARAMETROS
+      function somar(v1, v2) {
+        const resultado = parseFloat(v1) + parseFloat(v2);
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function multiplicar(v1, v2) {
+        const resultado = parseFloat(v1) * parseFloat(v2);
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function executarPrograma() {
+        const valor1 = document.getElementById("valor1").value;
+        const valor2 = document.getElementById("valor2").value;
+
+        const operacao = document.getElementById("operacao").value;
+        if (operacao === "a") {
+          somar(valor1, valor2);
+        }
+        if (operacao === "m") {
+          multiplicar(valor1, valor2);
+        }
+      }
+
+      // FUNCOES COM RETORNO
+      function calcularIMC(peso, altura) {
+        const imc = peso / (altura * altura);
+        return imc;
+      }
+
+      const resultado = calcularIMC(75.5, 1.79);
+      alert(resultado);
+
+      function formatarDateToBr(date) {
+        const dataFormatada = date.split("-").reverse().join("/");
+        return dataFormatada;
+      }
+      const dataFormatada = formatarDateToBr("2024-01-12");
+    </script>
+  </body>
+</html>

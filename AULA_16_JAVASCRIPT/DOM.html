@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="caixa">
+      <h1>Dom - Document Object Manipulation - DC</h1>
+    </div>
+
+    <button onclick="mudarEstilo()">Mudar com JS</button>
+
+    <script>
+      function mudarEstilo() {
+        let caixa = document.getElementById("caixa");
+        caixa.style.background = "red";
+        caixa.style.color = "black";
+        caixa.style.fontSize = "3em";
+        caixa.innerHTML = "<h2>Eu sou o JS</h2>";
+      }
+    </script>
+  </body>
+</html>

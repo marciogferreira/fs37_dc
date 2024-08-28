@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="somarDoisNumeros()">Somar Dois Numeros</button>
+    <button onclick="multiplicaDoisNumeros()">Multiplicar Dois Numeros</button>
+    <button onclick="dividirDoisNumeros()">Dividir Dois Numeros</button>
+    <button onclick="subtrairDoisNumeros()">Subtrair Dois Numeros</button>
+
+    <script>
+      let numero1 = 0;
+      let numero2 = 0;
+
+      function pedirNumeros() {
+        numero1 = prompt("Informe o valor 1");
+        numero2 = prompt("Informe o valor 2");
+
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+      }
+
+      function somarDoisNumeros() {
+        pedirNumeros();
+        const resultado = numero1 + numero2;
+
+        alert(resultado);
+        console.log(resultado);
+      }
+
+      function multiplicaDoisNumeros() {
+        pedirNumeros();
+
+        const resultado = numero1 * numero2;
+
+        alert(resultado);
+        console.log(resultado);
+      }
+
+      function dividirDoisNumeros() {
+        pedirNumeros();
+
+        const resultado = numero1 / numero2;
+
+        alert(resultado);
+        console.log(resultado);
+      }
+
+      function subtrairDoisNumeros() {
+        pedirNumeros();
+
+        const resultado = numero1 - numero2;
+
+        alert(resultado);
+        console.log(resultado);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const alunos = [];
+
+      let inicio = 1;
+      for (inicio; inicio < 6; inicio++) {
+        const nome = prompt("Adicione o nome " + inicio);
+        alunos.push(nome);
+      }
+
+      for (let indice = 0; indice < alunos.length; indice++) {
+        const nome = alunos[indice];
+        if (nome.length === 5) {
+          alert(nome);
+        }
+      }
+
+      document.write(alunos.join(", "));
+    </script>
+  </body>
+</html>

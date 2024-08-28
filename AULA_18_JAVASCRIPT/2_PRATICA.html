@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Nome</label>
+      <input type="text" name="nome" id="nome" />
+      <br />
+      <button type="button" id="btn_salvar" onclick="adicionarValor()">
+        Salvar
+      </button>
+      <button type="button" onclick="removerInicio()">Remover do Inicio</button>
+    </form>
+
+    <div id="exibicao_lista"></div>
+    <script>
+      // https://dontpad.com/fs37
+      const lista = Array();
+      function atualizarHTML() {
+        document.getElementById("exibicao_lista").innerHTML =
+          lista.join("<br />");
+      }
+
+      function removerInicio() {
+        lista.shift();
+        atualizarHTML();
+      }
+
+      function adicionarValor() {
+        // DOM JS
+        const nome = document.getElementById("nome").value;
+        lista.push(nome);
+        document.getElementById("nome").value = "";
+        atualizarHTML();
+      }
+    </script>
+  </body>
+</html>

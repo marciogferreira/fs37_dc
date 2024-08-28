@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 2_FUNCOES_DE_STRING
+      let texto = "Digital College - Curso de FullStack";
+
+      let retorno =
+        "JOAO GOMES FERREIRA                              3673036003012000 TRUE  ";
+
+      let nomeServidor = retorno.substring(0, 49);
+      let nomeServidorComStr = retorno.substr(0, 50);
+
+      nomeServidor = nomeServidor.trim();
+      let agencia = retorno.substring(49, 54);
+      let agenciaStr = retorno.substr(49, 5);
+
+      let conta = retorno.substring(54, 60);
+      let salario = retorno.substring(60, 66);
+
+      substr;
+
+      alert("salario: " + salario);
+
+      alert("Nome: " + nomeServidor);
+
+      let algunsCaracteres = texto.substring(1, 10);
+      alert(algunsCaracteres);
+
+      const quantidadeCaractere = texto.length;
+      const textoMaiusculo = texto.toUpperCase();
+      const textoMinusculo = texto.toLowerCase();
+      texto = texto.concat(" - Matrículas Abertas");
+      texto = texto.trim();
+
+      let codigo = "04032407";
+      codigo = codigo.padStart(30, "0");
+      alert(codigo);
+
+      texto = texto.replace("C", "G");
+      texto = texto.replaceAll("C", "G");
+
+      console.log(quantidadeCaractere);
+      console.log(textoMaiusculo);
+      console.log(textoMinusculo);
+      console.log(texto);
+    </script>
+  </body>
+</html>

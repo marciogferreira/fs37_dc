@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const a_1 = 4 / 2 + 2 / 4;
+      const a_2 = 4 / 2 + 2 / 4;
+      alert(a_1);
+      alert(a_2);
+
+      let salario = prompt("Digite o salario");
+      let percentual = prompt("Digite o Percentual de Aumento");
+
+      salario = parseFloat(salario);
+      percentual = parseFloat(percentual);
+
+      const valorPercentual = (salario * percentual) / 100;
+      const salarioAtual = valorPercentual + salario;
+
+      document.write("Salario Atual: " + salarioAtual);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="calcular()">Calcular</button>
+    <p id="result"></p>
+    <script>
+      function calcular() {
+        let peso = prompt("Informe seu peso(KG): ");
+        let altura = prompt("Informe seu altura: ");
+
+        peso = parseFloat(peso);
+        altura = parseFloat(altura);
+
+        const imc = peso / (altura * altura);
+
+        let resultado = "";
+
+        // IF E ELSE
+        if (imc < 18.5) {
+          resultado = "Muito Magro";
+        } else if (imc >= 18.5 && imc < 25) {
+          resultado = "Normal";
+        } else if (imc >= 25 && imc < 30) {
+          resultado = "Sobrepeso";
+        } else if (imc >= 30 && imc < 35) {
+          resultado = "Obeso grau I";
+        } else if (imc >= 35 && imc < 40) {
+          resultado = "Obeso grau II";
+        } else {
+          resultado = "Obeso grau III ou Mórbido";
+        }
+        alert(resultado);
+      }
+    </script>
+  </body>
+</html>

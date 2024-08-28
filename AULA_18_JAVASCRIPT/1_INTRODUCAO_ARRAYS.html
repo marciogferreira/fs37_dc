@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://dontpad.com/fs37
+      const lista = ["Ana", "Robson", "Roberto"];
+
+      console.log(lista[0]); // Ana
+      console.log(lista[3]); // undefined
+
+      const tamanhoLista = lista.length;
+      console.log("Tamanho da Lista", tamanhoLista);
+      lista[4] = "Max";
+      // ADICIONAR VALOR AO FINAL DO ARRAY
+      lista.push("Carla");
+      lista.push("Carlos");
+      lista.push("Raimunda");
+
+      // REMOVER DO FINAL DA LISTA
+      lista.pop();
+      lista.pop();
+      console.log(lista);
+
+      // ADICIONANDO NO INICIO DO ARRAY
+      lista.unshift("Anderson");
+      lista.unshift("Daniel");
+
+      // REMOVER DO INICIO DO ARRAY
+      lista.shift();
+      lista.shift();
+    </script>
+  </body>
+</html>

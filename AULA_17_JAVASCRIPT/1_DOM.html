@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo" style="color: red; background-color: black">
+      Texto de Exemplo
+    </div>
+
+    <button onclick="mudarCSS()">Mudar com JS</button>
+
+    <form action="">
+      <input
+        type="text"
+        id="nome"
+        placeholder="Nome"
+        value="Max"
+        style="background-color: gray"
+      />
+      <br />
+      <input type="text" id="sobrenome" placeholder="Sobrenome" />
+      <br />
+      <button type="button" onclick="salvarDados()">Salvar</button>
+    </form>
+
+    <script>
+      function salvarDados() {
+        const campoNome = document.getElementById("nome");
+        const campoSobrenome = document.getElementById("sobrenome");
+
+        const nome = campoNome.value;
+        const sobrenome = campoSobrenome.value;
+
+        alert(nome);
+        alert(sobrenome);
+      }
+
+      function mudarCSS() {
+        const div = document.getElementById("demo");
+        div.style.color = "yellow";
+        div.style.background = "gray";
+        div.style.fontSize = "40px";
+        div.innerHTML = "<h1>Eu sou o JS</h1>";
+      }
+    </script>
+  </body>
+</html>

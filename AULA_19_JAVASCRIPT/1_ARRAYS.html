@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://dontpad.com/fs37
+      const alunos = [];
+      for (let contador = 0; contador < 5; contador++) {
+        const nome = prompt("Digite o nome do ALuno: ");
+        alunos.push(nome);
+      }
+
+      const alunos_filtrados = [];
+      // incremento
+      for (let contador = 0; contador < alunos.length; contador++) {
+        const nome = alunos[contador];
+        if (nome.length == 3) {
+          alunos_filtrados.push(nome);
+        }
+      }
+      // decremento
+      for (let contador = 10000; contador > 0; contador--) {
+        console.log(contador);
+      }
+
+      document.write(alunos_filtrados.join(" - "));
+    </script>
+  </body>
+</html>

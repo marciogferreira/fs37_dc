@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Alunos</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-4">Gestão de Alunos</h1>
+
+      <div class="mb-4">
+        <h2>Adicionar Aluno</h2>
+        <form id="alunoForm">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="form-control" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+      </div>
+
+      <h2 class="mb-3">Lista de Alunos</h2>
+      <table class="table table-striped" id="alunosTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados dos alunos serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // Array para armazenar os alunos como arrays
+      let alunos = [];
+
+      // Função para atualizar a tabela
+      function atualizarTabela() {
+        const tbody = document.querySelector("#alunosTable tbody");
+        tbody.innerHTML = ""; // Limpar a tabela existente
+
+        alunos.forEach((aluno, index) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+                    <td>${aluno}</td>
+                
+                    <td>
+                        <button class="btn btn-warning btn-sm" onclick="editarAluno(${index})">Editar</button>
+                        <button class="btn btn-danger btn-sm" onclick="deletarAluno(${index})">Deletar</button>
+                    </td>
+                `;
+          tbody.appendChild(tr);
+        });
+      }
+
+      // Função para adicionar um aluno
+      function adicionarAluno(nome) {
+        alunos.push(nome);
+        atualizarTabela();
+      }
+
+      // Função para editar um aluno
+      function editarAluno(index) {
+        const nome = prompt("Novo nome:", alunos[index]);
+
+        if (nome) {
+          alunos[index] = nome;
+          atualizarTabela();
+        }
+      }
+
+      // Função para deletar um aluno
+      function deletarAluno(index) {
+        if (confirm("Tem certeza que deseja deletar este aluno?")) {
+          alunos.splice(index, 1);
+          atualizarTabela();
+        }
+      }
+
+      // Manipulador de envio do formulário
+      document
+        .getElementById("alunoForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nome = document.getElementById("nome").value;
+
+          adicionarAluno(nome);
+
+          // Limpar o formulário
+          document.getElementById("nome").value = "";
+        });
+
+      // Inicializar a tabela
+      atualizarTabela();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // IF...ELSE - SE..SENAO
+      const nome = prompt("Informe seu nome");
+
+      let idade = prompt("Informe sua idade");
+      idade = parseInt(idade);
+
+      if (idade < 15) {
+        alert("Você é uma criança");
+      } else {
+        if (idade >= 15 && idade < 18) {
+          alert("Você é adolescente");
+        } else {
+          if (idade >= 18 && idade < 60) {
+            alert("Você é Adulto");
+          } else {
+            alert("Você é Idoso");
+          }
+        }
+      }
+
+      if (idade < 15) {
+        alert("Você é uma criança");
+      } else if (idade >= 15 && idade < 18) {
+        alert("Você é adolescente");
+      } else if (idade >= 18 && idade < 60) {
+        alert("Você é Adulto");
+      } else {
+        alert("Você é Idoso");
+      }
+
+      // PRATICANDO
+      let media = prompt("Digite sua nota");
+      while (media > 10) {
+        media = prompt("Digite sua nota entre 0 e 10");
+      }
+
+      // CRIE UMA ESTRUTURA DE IF E ELSE PARA SABER SE O ALUNO FOI APROVADO
+      // , REPROVADO OU RECUPERAÇÃO.
+      // CASO A MEDIA SEJA >= A 7, EXIBA APROVADO
+      // CASO A MEDIA SEJA < 7 E >= 4, EXIBA ALUNO DE RECUPERAÇÃO.
+      // CASO A MEDIA SEJA < 4, EXIBA ALUNO REPROVADO.
+
+      // SWITCH - ESCOLHA
+      const dia_da_semana = prompt("Digite o dia da semana");
+      switch (dia_da_semana) {
+        case "Segunda-Feira":
+          alert("Trabalhar");
+          break;
+        case "Terça-Feira":
+          alert("Trabalhar");
+          break;
+        case "Quarta-Feira":
+          alert("Trabalhar e Ir para a Aula da DC");
+          break;
+        case "Sábado":
+          alert("Folga");
+          break;
+        default:
+          alert("Ir para Praia");
+          break;
+      }
+    </script>
+  </body>
+</html>

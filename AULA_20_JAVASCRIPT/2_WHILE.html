@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ENQUANTO - while
+      let menu = "1";
+      let estacionamento = [];
+      while (menu !== "0") {
+        menu = prompt(`
+            Digite A - Para Inserir um Nome, \n
+            Digite B - Para excluir, \n
+            Digite C - Exibir Todas as Placas \n
+            Digita ZERO - Para sair
+        `);
+        // faça isso
+        if (menu === "A") {
+          let placa = prompt("Digite a placa");
+          estacionamento.push(placa);
+        }
+        if (menu === "B") {
+          let placa = prompt("Digite a placa");
+          const listaFiltrada = estacionamento.filter((item) => {
+            if (item !== placa) {
+              return item;
+            }
+          });
+          estacionamento = listaFiltrada;
+        }
+
+        if (menu === "C") {
+          document.write(estacionamento.join("<br />"));
+        }
+      }
+
+      let numero = 1000;
+      while (numero > 0) {
+        console.log(numero);
+        numero--;
+      }
+    </script>
+  </body>
+</html>

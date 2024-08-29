@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="caixa" style=""></div>
+    <input type="text" name="nome" id="nome" value="Max" />
+
+    <script>
+      // TIPOS DE DADOS - PRIMITIVOS
+      const texto = "Texto"; // string
+      const numero_inteiro = 100; // number
+      const decimal = 100.0; // number
+      const logico = true; // boolean
+      let indefinido; // Nao tem tipo de valor
+
+      // LISTAS, PILHAS, FILAS, ARVORES, MATRIZES, ARRAY
+      const arrays = ["Ana", 10, 198.0, true, undefined];
+      const a = [1, 2, 3, 4];
+      const b = [5, 6, 7, 8];
+      const doisArrays = [a, b];
+      const valor = doisArrays[1][3];
+      console.log(valor);
+
+      //   const funcaoqualquer = () => {
+      //     alert("Eu sou uma funcao")
+      //   }
+      //   funcaoqualquer()
+
+      // OBJETO
+      const pessoa = {
+        nome: "Anderson",
+        idade: 34,
+        data_nascimento: "09-11-1990",
+        altura: 1.7,
+        dormir: () => {},
+        comer: () => {},
+      };
+      pessoa.nome = "Bruno";
+      alert(pessoa.altura);
+
+      const caixa = document.getElementById("caixa");
+      caixa.style.height = "100px";
+      caixa.style.width = "100px";
+      caixa.style.background = "red";
+
+      // ARRAYS DE OBJETOS
+
+      const alunos = [
+        {
+          nome: "Max",
+          cpf: "10383948443",
+        },
+        {
+          nome: "Ana",
+          cpf: "12132343434",
+        },
+        {
+          nome: "Edi",
+          cpf: "43433343434",
+        },
+      ];
+
+      const p = alunos[2];
+      alert(p.nome);
+
+      const resposavel = {
+        nome: "Rafael",
+        dependentes: [
+          {
+            nome: "Livia",
+            cpf: "018384940",
+          },
+          {
+            nome: "João",
+            cpf: "123123131",
+          },
+        ],
+        conjuge: {
+          nome: "Maria",
+        },
+      };
+
+      resposavel.nome;
+      resposavel.conjuge.nome;
+      resposavel.dependentes.map((item) => {
+        console.log(item.nome);
+        console.log(item.cpf);
+      });
+    </script>
+  </body>
+</html>

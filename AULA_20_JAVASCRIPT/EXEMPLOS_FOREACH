@@ -1,0 +1,11 @@
+pessoas.forEach(function (valor, indice) {
+    alert(indice + " - " + valor);
+});
+
+pessoas.forEach((valor, indice) => {
+    alert(indice + " - " + valor);
+});
+
+pessoas.forEach((valor, posicao) => {
+    alert(valor)
+})

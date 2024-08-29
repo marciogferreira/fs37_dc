@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Pessoas Cadastradas</h3>
+    <ul id="lista"></ul>
+
+    <script>
+      const alunos = ["Ana", "Maria", "Carla", "Edi"];
+      // FOR
+      for (let contador = 0; contador < alunos.length; contador++) {
+        console.log(alunos[contador]);
+      }
+
+      const pessoas = ["Ana", "Maria Silva", "Carla", "Edi", "Bruno"];
+      // FOREACH
+      function lerPosicao(valor, indice, lista) {
+        // alert(indice + " - " + valor);
+        console.log(indice + " - " + valor);
+        console.log(lista);
+      }
+      pessoas.forEach(lerPosicao);
+      //  pessoas.forEach(() => {})
+
+      // MAP
+      let montagemHTML = "";
+      pessoas.map((valor, posicao) => {
+        montagemHTML = montagemHTML + `<li>${valor}</li>`;
+      });
+      document.getElementById("lista").innerHTML = montagemHTML;
+      console.log(montagemHTML);
+
+      // FILTER
+      const pessoasFiltradas = pessoas.filter((nome, posicao) => {
+        if (nome.length === 3) {
+          return nome;
+        }
+      });
+      console.log(pessoasFiltradas);
+
+      // DECIMAIS - FLOAT -
+      // REDUCE
+      const valores = [12000.98, 10239.0, 9875.99];
+
+      const total = valores.reduce((valorAcumulado, valorDaPosicao) => {
+        console.log("Valor Acumulado", valorAcumulado);
+        console.log("valorDaPosicao", valorDaPosicao);
+        return valorAcumulado + valorDaPosicao;
+      }, 0);
+      //   valores.reduce(() => {}, 0)
+
+      console.log(total);
+    </script>
+  </body>
+</html>

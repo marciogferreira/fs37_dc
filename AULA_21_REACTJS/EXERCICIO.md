@@ -154,6 +154,8 @@ Salve todas as alterações e verifique a aplicação em `http://localhost:5173`
 
 ## Conclusão
 
+Crie um repositório no seu github, suba o projeto e envie o link para o seu professor avaliar.
+
 Você agora tem um projeto Vite + React básico com os componentes `Cabecalho`, `Blog` e `Rodape` configurados. Vite fornece uma configuração rápida e React ajuda a criar uma UI modular e gerenciável. Continue explorando e construindo sua aplicação!
 
 Para mais informações, consulte a documentação oficial:

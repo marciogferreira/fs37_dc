@@ -1,0 +1,12 @@
+npm create vite@latest
+Passos:
+
+1. Nome do Projeto
+2. Selecione React
+3. Selecione JavaScript
+4. Execute: cd nome_do_projeto
+5. Execute: npm install
+6. Execute: npm run dev
+
+npm run dev
+npm run build

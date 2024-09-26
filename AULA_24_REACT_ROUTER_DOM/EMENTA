@@ -1,0 +1,22 @@
+MODULO:
+AULA_24_REACT_ROUTER_DOM
+
+OBJETIVOS:
+- REACT ROUTER DOM
+- STYLES
+- COMPONENTES
+- RESTFUL API
+- FETCH
+
+COMANDOS:
+npm create vite@latest
+Nome: projeto
+React
+JavaScript
+cd projeto
+npm install
+npm run dev
+
+
+npm install react-router-dom
+npm run dev

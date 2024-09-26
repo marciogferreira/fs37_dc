@@ -1,0 +1,7 @@
+MODULO:
+  - REACTJS
+
+OBJETIVOS:
+  - componentes
+  - props e children
+  - useState e useEffect

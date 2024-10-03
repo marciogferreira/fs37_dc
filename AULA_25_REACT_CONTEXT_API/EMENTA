@@ -1,0 +1,22 @@
+MODULO:
+REACT JS
+
+OBJETIVOS:
+
+- REACT ROUTER DOM
+- PASSAGEM DE PARAMETROS
+- CONTEXT API
+- CRIANDO CARRINHO DE COMPRAS
+- CRIANDO UMA TO DO LIST
+- CONTROLE DE AUTENTICAÇÃO E AUTORIZAÇÃO - LOGIN E SENHA
+
+COMANDOS PARA EXECUTAR NO TERMINAL:
+npm create vite@latest
+projeto
+cd projeto
+npm install
+npm run dev
+
+Ctrl + C
+
+npm install react-router-dom

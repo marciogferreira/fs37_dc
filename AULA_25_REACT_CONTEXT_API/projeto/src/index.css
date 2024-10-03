@@ -1,0 +1,21 @@
+#carrinho {
+    position: relative;
+}
+#carrinho span {
+    font-size: 3em;
+}
+#carrinho p {
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 35px;
+    font-size: 10px;
+}

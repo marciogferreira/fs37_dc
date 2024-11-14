@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução ao MySQL Workbench</title>
+  
+  <!-- Link para o Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/solarized.css">
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+  <style>
+    /* Customização de estilo */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Slide 1: Título -->
+      <section>
+        <h1>Introdução ao MySQL Workbench</h1>
+        <p>Ferramenta de administração e design de banco de dados</p>
+      </section>
+
+      <!-- Slide 2: O que é o MySQL Workbench? -->
+      <section>
+        <h2>O que é o MySQL Workbench?</h2>
+        <p>O MySQL Workbench é uma ferramenta gráfica usada para administração, design e desenvolvimento de bancos de dados MySQL.</p>
+        <ul>
+          <li><strong>Design de banco de dados</strong></li>
+          <li><strong>Administração de servidores MySQL</strong></li>
+          <li><strong>Execução de consultas SQL</strong></li>
+        </ul>
+      </section>
+
+      <!-- Slide 3: Instalação do MySQL Workbench -->
+      <section>
+        <h2>Instalação do MySQL Workbench</h2>
+        <ul>
+          <li>Baixe o MySQL Workbench no site oficial: <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloads</a></li>
+          <li>Certifique-se de que o MySQL Server já esteja instalado em sua máquina.</li>
+          <li>Execute o instalador e siga as instruções.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4: Interface do MySQL Workbench -->
+      <section>
+        <h2>Interface do MySQL Workbench</h2>
+        <p>A interface do MySQL Workbench é composta por várias seções importantes:</p>
+        <ul>
+          <li><strong>Barra de Menus:</strong> Contém opções para gerenciamento de bancos de dados e configuração.</li>
+          <li><strong>Painel de Conexões:</strong> Permite criar e gerenciar conexões com servidores MySQL.</li>
+          <li><strong>Área de Edição SQL:</strong> Onde você escreve e executa consultas SQL.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 5: Conectando ao MySQL Server -->
+      <section>
+        <h2>Conectando ao MySQL Server</h2>
+        <p>Para se conectar ao servidor MySQL:</p>
+        <ul>
+          <li>Abra o MySQL Workbench.</li>
+          <li>Clique em "Nova Conexão" e forneça as credenciais de conexão.</li>
+          <li>Escolha o tipo de conexão (local ou remoto) e clique em "Testar Conexão".</li>
+          <li>Clique em "OK" para conectar.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 6: Criação de Banco de Dados e Tabelas -->
+      <section>
+        <h2>Criação de Banco de Dados e Tabelas</h2>
+        <p>Para criar um banco de dados:</p>
+        <ul>
+          <li>Abra o MySQL Workbench.</li>
+          <li>No painel "Navigator", clique com o botão direito em "Schemas" e selecione "Create Schema".</li>
+          <li>Forneça um nome para o banco de dados e clique em "Apply".</li>
+        </ul>
+        <p>Para criar tabelas, use a opção "Create Table" e defina as colunas e tipos de dados.</p>
+      </section>
+
+      <!-- Slide 7: Consultas SQL no MySQL Workbench -->
+      <section>
+        <h2>Consultas SQL no MySQL Workbench</h2>
+        <p>O MySQL Workbench oferece um editor SQL poderoso:</p>
+        <ul>
+          <li><strong>SELECT:</strong> Consulta dados de uma tabela.</li>
+          <li><strong>INSERT:</strong> Insere novos dados.</li>
+          <li><strong>UPDATE:</strong> Atualiza dados existentes.</li>
+          <li><strong>DELETE:</strong> Exclui dados.</li>
+        </ul>
+        <p>Exemplo de consulta SELECT:</p>
+        <pre>
+SELECT * FROM usuarios;
+        </pre>
+      </section>
+
+      <!-- Slide 8: Administração e Backup de Banco de Dados -->
+      <section>
+        <h2>Administração e Backup de Banco de Dados</h2>
+        <p>O MySQL Workbench também permite realizar tarefas administrativas, como:</p>
+        <ul>
+          <li><strong>Backup de banco de dados:</strong> Vá até "Server" > "Data Export" para exportar dados.</li>
+          <li><strong>Gerenciamento de usuários:</strong> Crie e gerencie contas de usuário e suas permissões.</li>
+          <li><strong>Monitoramento do servidor:</strong> Veja o status do servidor e execute tarefas de manutenção.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 9: Conclusão -->
+      <section>
+        <h2>Conclusão</h2>
+        <p>O MySQL Workbench é uma ferramenta essencial para administradores de banco de dados MySQL, fornecendo uma interface gráfica para gerenciar bancos de dados, executar consultas SQL e realizar tarefas administrativas com facilidade.</p>
+        <p>Com ele, é possível trabalhar de forma mais eficiente no design, desenvolvimento e manutenção de bancos de dados MySQL.</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script>
+    // Inicializar o Reveal.js
+    Reveal.initialize({
+      width: "100%",
+      height: "100%",
+      margin: 0.1,
+      minScale: 0.2,
+      maxScale: 1.5,
+      slideNumber: true,
+      progress: true,
+      history: true,
+      center: true
+    });
+  </script>
+
+</body>
+</html>

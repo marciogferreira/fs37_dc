@@ -1,0 +1,9 @@
+ORM - Object Relation Mapping
+
+1. Sequelize ORM
+2. Prisma ORM
+3. TypeORM
+
+npm install --save pg pg-hstore 
+
+

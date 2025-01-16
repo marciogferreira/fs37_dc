@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "No MySQL, o conceito de \"domínios\" se refere a valores ou tipos de dados que são usados em colunas de tabelas. O MySQL não tem um comando direto que liste todos os \"domínios\", mas pode-se inferir essa informação a partir de todos os tipos de dados usados nas tabelas e colunas do banco de dados.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
+  }
+}

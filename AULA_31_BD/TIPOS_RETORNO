@@ -1,0 +1,14 @@
+content-type
+
+application/pdf
+application/exe
+application/jar
+
+image/jpeg
+image/png
+image/*
+
+text/json
+text/plain
+text/html
+

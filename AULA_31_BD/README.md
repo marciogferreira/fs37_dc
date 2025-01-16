@@ -65,6 +65,8 @@ WHERE table_schema = 'nome_do_banco';
 Essa consulta vai retornar o nome das tabelas, o nome das colunas e os tipos de dados usados.
 
 
+https://draw.io/
+
 CREATE DATABASE fs37;
 
 CREATE TABLE fs37.produtos(

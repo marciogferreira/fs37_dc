@@ -1,0 +1,9 @@
+CRIE A PASTA DA AULA, ABRA COM O VSCODE E EXECUTE OS COMANDOS ABAIXO:
+
+npm init -y
+
+INSTALAÇÕES DE BIBLIOTECAS:
+
+npm i nodemon
+npm i sequelize
+npm i pg pg-hstore --save

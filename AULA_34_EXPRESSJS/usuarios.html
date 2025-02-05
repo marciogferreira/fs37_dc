@@ -11,6 +11,16 @@
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
+
+                <form action="">
+                    <div>
+                        <input type="text" id="nome" class="form-control">
+                    </div>
+                    <div>
+                       <button type="button" class="btn btn-success btn-sm" onclick="criarUsuario()">Salvar</button>
+                    </div>
+                </form>
+
                 <button class="btn btn-primary btn-sm" onclick="listarUsuarios()">Listar</button>
                 <table class="table table-hover">
                     <thead>
@@ -49,6 +59,15 @@
                     </tr>
                 `
             })
+        }
+
+        async function criarUsuario() {
+            const nome = document.querySelector('#nome').value
+            const dados = {
+                nome: nome
+            }
+            const response = await axios.post('http://localhost:3000/usuarios', dados)
+            listarUsuarios();
         }
     </script>
 </body>

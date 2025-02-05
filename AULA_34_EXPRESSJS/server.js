@@ -1,9 +1,12 @@
 import express from 'express'
 import cors from 'cors'
 const app = express()
+
 app.use(cors({
     // origin: '*'
 }))
+// LIBERAÇÃO PARA UTILIZAR O BODY NO POST E PUTs
+app.use(express.json())
 
 app.get('/', (request, response) => {
     response.send('Hello Express')
@@ -28,6 +31,12 @@ app.get('/usuarios/:id', (request, response) => {
     } else {
         response.send("Usuário inexistente!")
     }
+})
+
+app.post('/usuarios', (request, response) => {
+    const dados = request.body;
+    usuarios.push(dados);
+    response.json({ mensagem: 'Usuario inserido com sucesso.' })
 })
 
 

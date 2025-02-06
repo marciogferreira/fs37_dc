@@ -67,6 +67,7 @@
                 nome: nome
             }
             const response = await axios.post('http://localhost:3000/usuarios', dados)
+            console.log(response.data.mensagem)
             listarUsuarios();
         }
     </script>

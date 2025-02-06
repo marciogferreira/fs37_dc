@@ -1,5 +1,7 @@
 import express from 'express'
 import cors from 'cors'
+import CategoriasRotas from './src/routes/CategoriasRoutes.js'
+import FornecedoresRoutes from './src/routes/FornecedoresRoutes.js'
 const app = express()
 
 app.use(cors({
@@ -38,6 +40,12 @@ app.post('/usuarios', (request, response) => {
     usuarios.push(dados);
     response.json({ mensagem: 'Usuario inserido com sucesso.' })
 })
+
+// CRUDS
+app.use(CategoriasRotas)
+app.use(FornecedoresRoutes)
+
+
 
 
 app.get('/contato', (request, response) => {
